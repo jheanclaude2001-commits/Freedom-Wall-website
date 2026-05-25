@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Freedom Wall</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+
+    <div class="wrapper">
+        <header>
+            <h1><i class="fas fa-thumbtack"></i> Tcc  Freedom Wall</h1>
+            <p>Write your thoughts anonymously. Stick them to the wall.</p>
+        </header>
+
+        <div class="input-area">
+            <textarea id="messageText" placeholder="What's on your mind?" maxlength="200" required></textarea>
+            <div class="controls">
+                <div class="colors">
+                    <div class="color-circle selected" data-color="#ff7f7f" style="background: #ff7f7f;"></div>
+                    <div class="color-circle" data-color="#ffeb3b" style="background: #ffeb3b;"></div>
+                    <div class="color-circle" data-color="#81c784" style="background: #81c784;"></div>
+                    <div class="color-circle" data-color="#64b5f6" style="background: #64b5f6;"></div>
+                    <div class="color-circle" data-color="#ba68c8" style="background: #ba68c8;"></div>
+                </div>
+                <button id="postBtn">Post Note</button>
+            </div>
+        </div>
+
+        <div class="wall-container" id="wall">
+            <!-- Notes will load here -->
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
